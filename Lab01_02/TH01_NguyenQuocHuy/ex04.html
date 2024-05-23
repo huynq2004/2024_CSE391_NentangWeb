@@ -2,68 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
     <link rel="stylesheet" href="css/style04.css">
 </head>
 <body>
-<form action="ex03.html">
-    <div class="basic">
-        <table>
-            <tr>
-                <td>Employee ID</td>
-                <td><input type="text" id="employid" name="employid"></td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text" id="lname" name="lname"></td>
-            </tr>
-            <tr>
-                <td><label for="fname">First Name</label></td>
-                <td><input type="text" id="fname" name="fname"></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>
-                    <input type="radio" id="male" name="fav_language" value="Male">
-                    <label for="html">HTML</label><br>
-                    <input type="radio" id="fmale" name="fav_language" value="Female">
-                    <label for="css">CSS</label><br>
-                    <input type="radio" id="xxx" name="fav_language" value="JavaScript">
-                    <label for="javascript">JavaScript</label>
+<form id="employeeForm">
+    <fieldset>
+        <legend>Basic Info</legend>
+        <div class="form-row">
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" value="9" readonly>
+        </div>
 
+        <div class="form-row">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
 
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-        </table>
+        <div class="form-row">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
 
-    </div>
+        <div class="form-row">
+            <label>Gender:</label>
+            <div class="input-group">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+        </div>
 
-    <div class="contact">
+        <div class="form-row">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="Sales Representative">
+        </div>
 
+        <div class="form-row">
+            <label for="suffix">Suffix:</label>
+            <select id="suffix" name="suffix">
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Dr.">Dr.</option>
+            </select>
+        </div>
 
-    </div>
+        <div class="form-row">
+            <label for="birthDate">BirthDate:</label>
+            <input type="text" id="birthDate" name="birthDate" value="1969-07-02">
+        </div>
 
-    <div class="optional">
+        <div class="form-row">
+            <label for="hireDate">HireDate:</label>
+            <input type="text" id="hireDate" name="hireDate" value="1994-11-15">
+        </div>
 
+        <div class="form-row">
+            <label for="ssn">SSN:</label>
+            <input type="text" id="ssn" name="ssn">
+        </div>
+
+        <div class="form-row">
+            <label for="reportsTo">Reports To:</label>
+            <select id="reportsTo" name="reportsTo">
+                <option value="Buchanan">Buchanan</option>
+
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Info</legend>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-row">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+
+        <div class="form-row">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        </div>
+
+        <div class="form-row">
+            <label for="region">Region:</label>
+            <input type="text" id="region" name="region">
+        </div>
+
+        <div class="form-row">
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode">
+        </div>
+
+        <div class="form-row">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Russia">Russia</option>
+
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="usPhone">US Home Phone:</label>
+            <input type="tel" id="usPhone" name="usPhone">
+        </div>
+
+        <div class="form-row">
+            <label for="photo">Photo:</label>
+            <input type="text" id="photo" name="photo">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Optional Info</legend>
+        <div class="form-row">
+            <label for="notes">Notes:</label>
+            <input type="text" id="notes" name="notes" value="Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.">
+        </div>
+
+        <div class="form-row">
+            <label>Preferred Shift:</label>
+            <div class="input-group">
+                <input type="radio" id="regularShift" name="shift" value="Regular" checked>
+                <label for="regularShift">Regular</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="graveyardShift" name="shift" value="Graveyard">
+                <label for="graveyardShift">Graveyard</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="active">Active?</label>
+            <input type="checkbox" id="active" name="active" checked>
+        </div>
+    </fieldset>
+
+    <div class="form-row buttons">
+        <input type="submit" value="Submit">
+        <input type="button" value="Cancel" onclick="location.reload()">
     </div>
 </form>
 </body>
