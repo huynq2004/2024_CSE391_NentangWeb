@@ -10,14 +10,7 @@ header {
     padding: 10px 20px;
     text-align: center;
 }
-nav {
-    margin: 10px 0;
-}
-nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
+
 .container {
     padding: 20px;
 }
@@ -44,9 +37,5 @@ nav a {
 .icon {
     margin-right: 10px;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-}
+
+
