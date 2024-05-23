@@ -1,7 +1,8 @@
-table{
+table {
     border: medium black;
     border-collapse: collapse;
-}
-table tr td{
+  }
+  td {
     padding: 10px;
-}
+  }
+  
