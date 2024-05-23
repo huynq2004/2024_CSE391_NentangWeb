@@ -10,97 +10,146 @@
 <form id="employeeForm">
     <fieldset>
         <legend>Basic Info</legend>
-        <label for="employeeId">Employee ID:</label>
-        <input type="text" id="employeeId" name="employeeId" value="9" readonly><br><br>
+        <div class="form-row">
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" value="9" readonly>
+        </div>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required><br><br>
+        <div class="form-row">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
 
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required><br><br>
+        <div class="form-row">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
 
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br><br>
+        <div class="form-row">
+            <label>Gender:</label>
+            <div class="input-group">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+        </div>
 
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" value="Sales Representative"><br><br>
+        <div class="form-row">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="Sales Representative">
+        </div>
 
-        <label for="suffix">Suffix:</label>
-        <select id="suffix" name="suffix">
-            <option value="Mr.">Mr.</option>
-            <option value="Ms.">Ms.</option>
-            <option value="Dr.">Dr.</option>
-        </select><br><br>
+        <div class="form-row">
+            <label for="suffix">Suffix:</label>
+            <select id="suffix" name="suffix">
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Dr.">Dr.</option>
+            </select>
+        </div>
 
-        <label for="birthDate">BirthDate:</label>
-        <input type="datetime-local" id="birthDate" name="birthDate" value="1969-07-02T00:00"><br><br>
+        <div class="form-row">
+            <label for="birthDate">BirthDate:</label>
+            <input type="text" id="birthDate" name="birthDate" value="1969-07-02">
+        </div>
 
-        <label for="hireDate">HireDate:</label>
-        <input type="datetime-local" id="hireDate" name="hireDate" value="1994-11-15T00:00"><br><br>
+        <div class="form-row">
+            <label for="hireDate">HireDate:</label>
+            <input type="text" id="hireDate" name="hireDate" value="1994-11-15">
+        </div>
 
-        <label for="ssn">SSN:</label>
-        <input type="text" id="ssn" name="ssn"><br><br>
+        <div class="form-row">
+            <label for="ssn">SSN:</label>
+            <input type="text" id="ssn" name="ssn">
+        </div>
 
-        <label for="reportsTo">Reports To:</label>
-        <select id="reportsTo" name="reportsTo">
-            <option value="Buchanan">Buchanan</option>
+        <div class="form-row">
+            <label for="reportsTo">Reports To:</label>
+            <select id="reportsTo" name="reportsTo">
+                <option value="Buchanan">Buchanan</option>
 
-        </select><br><br>
+            </select>
+        </div>
     </fieldset>
 
     <fieldset>
         <legend>Contact Info</legend>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
 
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address"><br><br>
+        <div class="form-row">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
 
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city"><br><br>
+        <div class="form-row">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        </div>
 
-        <label for="region">Region:</label>
-        <input type="text" id="region" name="region"><br><br>
+        <div class="form-row">
+            <label for="region">Region:</label>
+            <input type="text" id="region" name="region">
+        </div>
 
-        <label for="postalCode">Postal Code:</label>
-        <input type="text" id="postalCode" name="postalCode"><br><br>
+        <div class="form-row">
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode">
+        </div>
 
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="Russia">Russia</option>
+        <div class="form-row">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Russia">Russia</option>
 
-        </select><br><br>
+            </select>
+        </div>
 
-        <label for="usPhone">US Home Phone:</label>
-        <input type="tel" id="usPhone" name="usPhone"><br><br>
+        <div class="form-row">
+            <label for="usPhone">US Home Phone:</label>
+            <input type="tel" id="usPhone" name="usPhone">
+        </div>
 
-        <label for="photo">Photo:</label>
-        <input type="file" id="photo" name="photo"><br><br>
+        <div class="form-row">
+            <label for="photo">Photo:</label>
+            <input type="text" id="photo" name="photo">
+        </div>
     </fieldset>
 
     <fieldset>
         <legend>Optional Info</legend>
-        <label for="notes">Notes:</label>
-        <textarea id="notes" name="notes">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.</textarea><br><br>
+        <div class="form-row">
+            <label for="notes">Notes:</label>
+            <input type="text" id="notes" name="notes" value="Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.">
+        </div>
 
-        <label>Preferred Shift:</label>
-        <input type="radio" id="regularShift" name="shift" value="Regular" checked>
-        <label for="regularShift">Regular</label>
-        <input type="radio" id="graveyardShift" name="shift" value="Graveyard">
-        <label for="graveyardShift">Graveyard</label><br><br>
+        <div class="form-row">
+            <label>Preferred Shift:</label>
+            <div class="input-group">
+                <input type="radio" id="regularShift" name="shift" value="Regular" checked>
+                <label for="regularShift">Regular</label>
+            </div>
+            <div class="input-group">
+                <input type="radio" id="graveyardShift" name="shift" value="Graveyard">
+                <label for="graveyardShift">Graveyard</label>
+            </div>
+        </div>
 
-        <label for="active">Active?</label>
-        <input type="checkbox" id="active" name="active" checked><br><br>
-
-        <label for="captcha">Are you human?</label>
-        <input type="text" id="captcha" name="captcha"><br><br>
+        <div class="form-row">
+            <label for="active">Active?</label>
+            <input type="checkbox" id="active" name="active" checked>
+        </div>
     </fieldset>
 
-    <input type="submit" value="Submit">
-    <input type="button" value="Cancel" onclick="location.reload()">
+    <div class="form-row buttons">
+        <input type="submit" value="Submit">
+        <input type="button" value="Cancel" onclick="location.reload()">
+    </div>
 </form>
 </body>
 </html>
