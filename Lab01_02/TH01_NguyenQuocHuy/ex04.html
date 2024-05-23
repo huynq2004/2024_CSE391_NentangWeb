@@ -2,69 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
     <link rel="stylesheet" href="css/style04.css">
 </head>
 <body>
-<form action="ex03.html">
-    <div class="basic">
-        <table>
-            <tr>
-                <td>Employee ID</td>
-                <td><input type="text" id="employid" name="employid"></td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text" id="lname" name="lname"></td>
-            </tr>
-            <tr>
-                <td><label for="fname">First Name</label></td>
-                <td><input type="text" id="fname" name="fname"></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>
-                    <input type="radio" id="male" name="fav_language" value="Male">
-                    <label for="html">HTML</label><br>
-                    <input type="radio" id="fmale" name="fav_language" value="Female">
-                    <label for="css">CSS</label><br>
-                    <input type="radio" id="xxx" name="fav_language" value="JavaScript">
-                    <label for="javascript">JavaScript</label>
+<form id="employeeForm">
+    <fieldset>
+        <legend>Basic Info</legend>
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" name="employeeId" value="9" readonly><br><br>
 
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
 
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-            <tr>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </tr>
-        </table>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
 
-    </div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
 
-    <div class="contact">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="Sales Representative"><br><br>
 
+        <label for="suffix">Suffix:</label>
+        <select id="suffix" name="suffix">
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Dr.">Dr.</option>
+        </select><br><br>
 
-    </div>
+        <label for="birthDate">BirthDate:</label>
+        <input type="datetime-local" id="birthDate" name="birthDate" value="1969-07-02T00:00"><br><br>
 
-    <div class="optional">
+        <label for="hireDate">HireDate:</label>
+        <input type="datetime-local" id="hireDate" name="hireDate" value="1994-11-15T00:00"><br><br>
 
-    </div>
+        <label for="ssn">SSN:</label>
+        <input type="text" id="ssn" name="ssn"><br><br>
+
+        <label for="reportsTo">Reports To:</label>
+        <select id="reportsTo" name="reportsTo">
+            <option value="Buchanan">Buchanan</option>
+
+        </select><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Info</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="region">Region:</label>
+        <input type="text" id="region" name="region"><br><br>
+
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode"><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="Russia">Russia</option>
+
+        </select><br><br>
+
+        <label for="usPhone">US Home Phone:</label>
+        <input type="tel" id="usPhone" name="usPhone"><br><br>
+
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Optional Info</legend>
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.</textarea><br><br>
+
+        <label>Preferred Shift:</label>
+        <input type="radio" id="regularShift" name="shift" value="Regular" checked>
+        <label for="regularShift">Regular</label>
+        <input type="radio" id="graveyardShift" name="shift" value="Graveyard">
+        <label for="graveyardShift">Graveyard</label><br><br>
+
+        <label for="active">Active?</label>
+        <input type="checkbox" id="active" name="active" checked><br><br>
+
+        <label for="captcha">Are you human?</label>
+        <input type="text" id="captcha" name="captcha"><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="button" value="Cancel" onclick="location.reload()">
 </form>
 </body>
 </html>
