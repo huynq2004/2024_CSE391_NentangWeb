@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/ex04.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="type-info">
+                <header class="type-info-header">Basic Info
+                </header>
+                <hr>
+                <div class="type-info-elements">
+                    <div class="type-info-element">
+                        <span class="element-title">EmployeeID</span>
+                        <span class="element-input">9</span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Last Name</span>
+                        <span class="element-input">Dodsworth</span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">First Name</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Gender</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="radio" name = "Gender" value="male"> Male
+                        </label>
+                        <label>
+                            <input type="radio" name = "Gender" value="female"> Female
+                        </label>
+                        <label>
+                            <input type="radio" name = "Gender" value="xxx"> XXX
+                        </label>
+                        <label>
+                            <input type="radio" name = "Gender" value="zzz"> ZZZ
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Title</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Suffix</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">BirthDate</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="datetime-local" value="2024-05-17T08:00">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">HireDate</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="datetime-local" value="2024-05-17T08:00">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">SNN # (if applicable)</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Report to</span>
+                        <span class="element-input">
+                        <label>
+                            <select class="list-item">
+                                <option>Option1</option>
+                                <option>Option2</option>
+                                <option>Option3</option>
+                            </select>
+                        </label>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="type-info">
+                <header class="type-info-header">Contact Info
+                </header>
+                <hr>
+                <div class="type-info-elements">
+                    <div class="type-info-element">
+                        <span class="element-title">Email</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="email" placeholder="name@example.com">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Address</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">City</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Region</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Postal Code</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Country</span>
+                        <span class="element-input">
+                        <label>
+                            <select class="list-item">
+                                <option value="">HaNoi</option>
+                                <option value="">Ho Chi Minh</option>
+                                <option value="">Da Nang</option>
+                                <option value="">Hue</option>
+                                <option value="">Hai Phong</option>
+                                <option value="">Quang Ninh</option>
+                            </select>
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">US Home Phone</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="text">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Photo</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="file">
+                        </label>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="type-info">
+                <header class="type-info-header">Optional Info
+                </header>
+                <hr>
+                <div class="type-info-elements">
+                    <div class="type-info-element">
+                        <span class="element-title">Note</span>
+                        <span class="element-input">
+                        <label>
+                            <textarea>
+                                  Welcome!
+                            </textarea>
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Preferred Shift</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="checkbox" name="Regular" value="regular"> Regular
+                        </label>
+                         <label>
+                            <input type="checkbox" name="Gravy Yard" value="gravy yard"> Gravy Yard
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Active?</span>
+                        <span class="element-input">
+                        <label>
+                            <input type="checkbox" name="Active" value="active">
+                        </label>
+                    </span>
+                    </div>
+                    <div class="type-info-element">
+                        <span class="element-title">Are you human?</span>
+                        <span class="element-input">
+                            <div id="captcha-container">
+                              <canvas id="captcha-image"></canvas>
+                              <label for="captcha-input"></label><input type="text" id="captcha-input" placeholder="Enter Captcha">
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <hr>
+                <div class="navigation-buttons">
+                <span>
+                    <button> <i class="fa-solid fa-caret-left"></i></button>
+                </span>
+                    <span>
+                    <button><i class="fa-solid fa-caret-right"></i></button>
+                </span>
+                </div>
+                <div class="form-action-buttons">
+                    <span><button type="button" id="check-button"><i class="fa-solid fa-upload"></i>Submit</button></span>
+                    <span><button><i class="fa-solid fa-xmark"></i>Cancel</button></span>
+                </div>
+            </footer>
+        </form>
+    </div>
+   
+</body>
+</html>
