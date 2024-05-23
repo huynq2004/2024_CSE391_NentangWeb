@@ -23,7 +23,7 @@ header {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
-    flex: 1 1 calc(33% - 40px);
+    flex: 1 1 calc(33% - 40px); /* Adjust the width of the course cards */
     box-sizing: border-box;
     transition: box-shadow 0.3s ease;
 }
@@ -37,3 +37,5 @@ header {
 .icon {
     margin-right: 10px;
 }
+
+
