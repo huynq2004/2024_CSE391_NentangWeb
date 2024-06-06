@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH2_Bài 2</title>
+</head>
+
+<body>
+    <ul id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+    </ul>
+    <button type="button" id="btn">Add</button>
+   
+    <script>
+        $(function(){
+            //lấy ra đối tuownhj bị click
+            $('#btn').on('click',function(){
+                
+                // Tính số phần tử trong thẻ ul (là các thẻ li)
+                let a = $('#list li').length +1;
+
+                // Đây là cú pháp tạo 1 element <li> với jquery: $('<li></li>')
+                let item = $('<li></li>').text('item '+ a);
+
+                // Thêm phần tử đó vào cuối thẻ ul
+                $('#list').append(item);
+                
+            });
+        });
+    </script>
+</body>
+
+</html>
